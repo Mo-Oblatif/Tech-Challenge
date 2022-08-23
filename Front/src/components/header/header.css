@@ -1,0 +1,14 @@
+header {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 2em;
+}
+
+ .logo {
+  max-width: 96px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
