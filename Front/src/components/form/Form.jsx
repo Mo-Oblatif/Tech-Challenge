@@ -25,16 +25,15 @@ function Form() {
 	return (
 		<div className='form'>
 			<h2>Ajouter un(e) Argonaute</h2>
-						<label>Nom de l'Argonaute</label>
-					<div className='submit-form'>
-      			<input className='submit-name' type="text" name="name" placeholder="Name" onChange={(e)=> {
+						<p>Nom de l'Argonaute</p>
+					<div className="submit-form">
+      			<input className="submit-name" type="text" name="name" placeholder="Name" onChange={(e)=> {
 							setArgonauteName(e.target.value)
 							}}/>
-        		<input className='submit-button' type="submit" value="Submit" onClick={submitName}/>
+        		<input className="submit-button" type="submit" value="Submit" onClick={submitName}/>
 				</div>
-
-				<h2>Membres de l'équipage</h2>
-			<div className='user-name'>
+			<h2>Membres de l'équipage</h2>
+			<div className="user-name">
 				{argonauteList.map((argonaute) => {
 					return (
 						<div key={argonaute.id}>
@@ -48,3 +47,6 @@ function Form() {
 }
 
 export default Form;
+
+
+
